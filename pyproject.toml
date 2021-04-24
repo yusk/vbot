@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "vbot"
+version = "0.1.0"
+description = ""
+authors = []
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.63.0"
+uvicorn = "^0.13.4"
+requests = "^2.25.1"
+beautifulsoup4 = "^4.9.3"
+Pillow = "^8.2.0"
+python-dotenv = "^0.17.0"
+
+[tool.poetry.dev-dependencies]
+httpie = "^2.4.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

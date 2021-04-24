@@ -1,0 +1,3 @@
+[submodule "genemoji"]
+	path = genemoji
+	url = git@github.com:yusk/genemoji-slack-bot.git

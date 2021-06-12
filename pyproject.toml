@@ -12,6 +12,8 @@ requests = "^2.25.1"
 beautifulsoup4 = "^4.9.3"
 Pillow = "^8.2.0"
 python-dotenv = "^0.17.0"
+selenium = "^3.141.0"
+chromedriver-binary = "^91.0.4472"
 
 [tool.poetry.dev-dependencies]
 httpie = "^2.4.0"

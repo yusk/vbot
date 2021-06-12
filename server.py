@@ -6,13 +6,13 @@ from urllib.parse import unquote
 from fastapi import FastAPI, Request
 
 from genemoji.src.slack import SlackAPIWrapper
-from genemoji.src.env import BOT_TOKEN, SLACK_COOKIE, TEAM_NAME
+from genemoji.src.env import BOT_TOKEN, TEAM_NAME, SLACK_EMAIL, SLACK_PASSWORD
 from genemoji.src.usecases import GENEMOJI_TEXTS, gen_d_upload_emoji
 
 setattr(SlackAPIWrapper, gen_d_upload_emoji.__name__, gen_d_upload_emoji)
 
 app = FastAPI()
-slack = SlackAPIWrapper(BOT_TOKEN, TEAM_NAME, SLACK_COOKIE)
+slack = SlackAPIWrapper(BOT_TOKEN, TEAM_NAME, SLACK_EMAIL, SLACK_PASSWORD)
 
 app_mention_id_cache = collections.deque([], 100)
 
